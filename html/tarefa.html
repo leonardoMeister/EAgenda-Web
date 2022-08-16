@@ -22,20 +22,25 @@
 <body>
 
   <style>
-   
-    @media all and ( min-width:250px) and (max-width: 411px) {
-      .excluir{
+    @media all and (min-width:250px) and (max-width: 411px) {
+      .excluir {
         margin-top: 5px;
         margin-left: 1px;
       }
-    }
-    @media all and ( min-width:412px)  {
-      .excluir{
-        margin-top: 0px;
-        margin-left: 5px;
+      .opcaoEscolha{
+        width: 170px;
       }
     }
 
+    @media all and (min-width:412px) {
+      .excluir {
+        margin-top: 0px;
+        margin-left: 5px;        
+      }
+      .opcaoEscolha{
+        width: 230px;
+      }
+    }
   </style>
   <nav class="navbar navbar-expand-lg navbar-light bg-light fz">
 
@@ -77,46 +82,48 @@
       <h1 class="col-4 mb-3">Tarefas Cadastradas</h1>
 
       <div class="col"></div>
-      
+
       <div class="col-3">
-        <a href="./cadastroTarefa.html"> 
-          <button  class="align-items-center btn btn-outline-primary ">Adicionar Novo</button>
+        <a href="./cadastroTarefa.html">
+          <button class="align-items-center btn btn-outline-primary ">Adicionar Novo</button>
         </a>
       </div>
       <div class="col-1"></div>
     </div>
     <div class="row mb-5">
-      
-      <div class="col-3 " style="align-items: center;">
-        <select  class="form-select " name="filtroDeBusca" id="filtroDeBusca">
+
+      <div class="col-5 " style="align-items: center;">
+        <select class="form-select opcaoEscolha" name="filtroDeBusca" id="filtroDeBusca">
           <option value="0">Todas</option>
           <option value="1">Prioridade Ascendente</option>
           <option value="2">Prioridade Descendente</option>
           <option value="3">Concluidas</option>
           <option value="4">Sem Concluir</option>
-        </select>        
+        </select>
       </div>
     </div>
 
-    <div class="row">
-      <table id="tabelaTarefas" class="table table-hover">
-        <thead>
-          <tr>
-            <th scope="col">Id</th>
-            <th scope="col">Titulo</th>
-            <th scope="col">Prioridade</th>
-            <th scope="col">Status</th>
-            <th scope="col">Ação</th>            
-          </tr>
-        </thead>
+    <div class="container">
+      <div class="row">
+        <table id="tabelaTarefas" class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Titulo</th>
+              <th scope="col">Prioridade</th>
+              <th scope="col">Status</th>
+              <th scope="col">Ação</th>
+            </tr>
+          </thead>
 
-        <tbody>         
+          <tbody>
 
-        </tbody>
+          </tbody>
 
-      </table>
-
-
+        </table>
+      </div>
+    </div>
+  </div>
 
 
 </body>

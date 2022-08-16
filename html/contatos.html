@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  
+
 
   <script type="module" src="../dist/controladores/dirContatosControl/contatoControlListagemDados.js" defer></script>
 
@@ -23,24 +23,24 @@
 
 <body>
   <style>
-   
-    @media all and ( min-width:250px) and (max-width: 369px) {
-      .excluir{
+    @media all and (min-width:250px) and (max-width: 369px) {
+      .excluir {
         margin-top: 5px;
         margin-left: 1px;
       }
     }
-    @media all and ( min-width:373px)  {
-      .excluir{
+
+    @media all and (min-width:373px) {
+      .excluir {
         margin-top: 0px;
         margin-left: 5px;
       }
     }
-
   </style>
   <nav class="navbar navbar-expand-lg navbar-light bg-light fz">
 
     <div class="container">
+
       <div class="container-fluid h5">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,6 +71,8 @@
     </div>
   </nav>
 
+
+
   <div class="container mt-5">
 
 
@@ -86,33 +88,28 @@
       </div>
       <div class="col-1"></div>
     </div>
-    <div class="row mb-5">
 
-      <div class="col-3 " style="align-items: center;">
-        <select class="form-select " name="filtroDeBusca" id="filtroDeBusca">
-          <option value="0">Todos</option>
-        </select>
+    <div class="container-fluid">
+      <div class="row">
+
+        <table id="tabelaContatos" class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Nome</th>
+              <th scope="col">Telefone</th>
+              <th scope="col">Ação</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+          </tbody>
+
+        </table>
       </div>
     </div>
-
-    <div class="row">
-      <table id="tabelaContatos" class="table table-hover">
-        <thead>
-          <tr>
-            <th scope="col">Id</th>
-            <th scope="col">Nome</th>
-            <th scope="col">Telefone</th>
-            <th scope="col">Ação</th>
-          </tr>
-        </thead>
-
-        <tbody>
-
-        </tbody>
-
-      </table>
-
-
+  </div>
 
 
 </body>

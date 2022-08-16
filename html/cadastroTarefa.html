@@ -53,13 +53,14 @@
     </div>
   </nav>
 
-  <div class="container mt-5">
 
+
+
+  <div class="container mt-5">
 
     <div class="row ms-5">
       <h1 class="col mb-5 h1 m">Cadastro de Tarefa</h1>
     </div>
-
 
 
     <form id="formularioTarefa" action="../html/tarefa.html" class="row g-3">
@@ -69,29 +70,30 @@
         <input type="text" id="titulo" placeholder="EX: Titulo Tarefa 38" required class="form-control" id="titulo">
       </div>
 
-      
+
       <div class="col-md-5" id="campodata1">
-        <label  for="inputPassword4" class="form-label ms-3">Data Criação</label>
+        <label for="inputPassword4" class="form-label ms-3">Data Criação</label>
         <input type="datetime-local" class="form-control" id="dataCriacao">
       </div>
 
       <div class="col-md-3" id="campodata2">
-        <label  for="inputPassword4" class="form-label ms-3">Data conclusão</label>
+        <label for="inputPassword4" class="form-label ms-3">Data conclusão</label>
         <input type="datetime-local" class="form-control" required id="dataConclusao">
       </div>
-      
+
       <div class="col-md-3">
         <label for="inputState" class="form-label ms-3">Categoria</label>
-        <select id="prioridade" class="form-select">          
+        <select id="prioridade" class="form-select">
           <option value="Baixa" selected>Baixa</option>
           <option value="Normal">Normal</option>
           <option value="Alta">Alta</option>
         </select>
       </div>
+
       <div class="col-md-4">
         <label for="inputState" class="form-label ms-3">Status Conclusão</label>
-        <select id="statusConclusao"  class="form-select" required>
-          
+        <select id="statusConclusao" class="form-select" required>
+
           <option selected disabled hidden value="">Percentual...</option>
 
           <option value="100">100% Concluida.</option>
@@ -108,10 +110,11 @@
         </select>
       </div>
 
-      
+
       <div class="col-12 mt-4">
         <button id="salvarTarefa" type="submit" class="btn btn-outline-success ms-5">Salvar Registro</button>
       </div>
+      
     </form>
 
   </div>
