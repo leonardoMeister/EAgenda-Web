@@ -30,13 +30,13 @@ function alimentarTarefasTabela(listaContatos: Contato[] | undefined) {
     coluna2.innerHTML = "<td>" + contato.nome + "</td>";
     coluna3.innerHTML = "<td>" + contato.telefone + "</td>";
     let botao1 = "<div >";
-     botao1 += "<a href='../html/cadastroContato.html'>" +
-      "<button  class='btn btn-primary editar' value='" + valor + "' style='width: 40px;' >" +
+     botao1 += "<a href='../html/cadastroContato.html' >" +
+      "<button  class='btn btn-primary editar icones ' value='" + valor + "' style='width: 40px;' >" +
       "<i class='bi bi-pencil text-light'></i>"
       + "</button>" +
       "</a>"
     botao1 +=
-      "<button  class='btn btn-primary excluir '  value='" + valor + "' style='width: 40px;' >" +
+      "<button  class='btn btn-primary excluir icones '  value='" + valor + "' style='width: 40px;' >" +
       "<i class='bi bi-trash text-light'></i>"
       + "</button>"
       botao1+= '</div>'

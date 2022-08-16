@@ -24,9 +24,20 @@
 <body>
   <style>
     @media all and (min-width:250px) and (max-width: 369px) {
-      .excluir {
-        margin-top: 5px;
-        margin-left: 1px;
+      .excluir {                
+        width: 30px !important;
+      }
+      .editar{
+        width: 30px !important;
+      }
+
+      .icones {                        
+        border-radius: 10px;
+        padding: 5px;
+        margin: 2px;
+        display: flex;              
+        transition: filter 300ms;
+        
       }
     }
 
@@ -89,7 +100,7 @@
       <div class="col-1"></div>
     </div>
 
-    <div class="container-fluid">
+    <div class="">
       <div class="row">
 
         <table id="tabelaContatos" class="table table-hover">
