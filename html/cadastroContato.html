@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 100%;">
 
 <head>
   <meta charset="UTF-8">
@@ -19,7 +19,7 @@
   <title>E-Agenda</title>
 </head>
 
-<body>
+<body class="h-100">
   <nav class="navbar navbar-expand-lg navbar-light bg-light fz">
 
     <div class="container">
@@ -34,7 +34,7 @@
               <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"  href="./features.html">Features</a>
+              <a class="nav-link" href="./features.html">Features</a>
             </li>
 
             <li class="nav-item dropdown">
@@ -53,49 +53,51 @@
     </div>
   </nav>
 
-  <div class="container mt-5">
+  <div class="container-sm">
+
+    <div class="mt-3 row">
+
+      <div class="ms-4 ">
+        <h1 class="col-12 mb-4">Cadastro de Contato</h1>
+      </div>
+
+      <div class="justify-content-center ">
+        <form id="formularioContato" action="../html/contatos.html" class="row g-3">
+          <input type="number" hidden value="0" id="campoIdentificacao">
+
+          <div class="col-md-5">
+            <label class="form-label ms-3">Nome</label>
+            <input type="text" id="nome" placeholder="EX: Leonado 38" required class="form-control">
+          </div>
+
+          <div class="col-md-5" id="campodata2">
+            <label class="form-label ms-3">Email</label>
+            <input type="email" class="form-control" placeholder="zzzzzz@zzzz.com" required id="email">
+          </div>
+
+          <div class="col-md-3" id="campodata1">
+            <label class="form-label ms-3">Telefone</label>
+            <input type="tel" maxlength="15" class="form-control" placeholder="(00) 00000-0000" id="telefone">
+          </div>
 
 
-    <div class="row ms-5">
-      <h1 class="col mb-5 h1 m">Cadastro de Contato</h1>
+          <div class="col-md-3">
+            <label for="inputState" class="form-label ms-3">Empresa</label>
+            <input type="text" class="form-control" placeholder="zzzz LTDA" name="empresa" id="empresa">
+          </div>
+
+          <div class="col-md-4">
+            <label for="inputState" class="form-label ms-3">Cargo</label>
+            <input type="text" class="form-control" placeholder="Chefe" name="cargo" id="cargo">
+          </div>
+
+
+          <div class="col-12 mt-4">
+            <button id="salvarContato" type="submit" class="btn btn-outline-success ms-5">Salvar Registro</button>
+          </div>
+        </form>
+      </div>
     </div>
-
-
-    <form id="formularioContato" action="../html/contatos.html" class="row g-3">
-      <input type="number" hidden value="0" id="campoIdentificacao">
-      
-      <div class="col-md-5">
-        <label  class="form-label ms-3">Nome</label>
-        <input  type="text" id="nome" placeholder="EX: Leonado 38" required class="form-control">
-      </div>
-
-      <div class="col-md-5" id="campodata2">
-        <label   class="form-label ms-3">Email</label>
-        <input type="email" class="form-control" placeholder="zzzzzz@zzzz.com" required id="email">
-      </div>
-
-      <div class="col-md-3" id="campodata1">
-        <label   class="form-label ms-3">Telefone</label>
-        <input type="tel" maxlength="15" class="form-control" placeholder="(00) 00000-0000" id="telefone">
-      </div>
-      
-      
-      <div class="col-md-3">
-        <label for="inputState" class="form-label ms-3">Empresa</label>
-        <input type="text" class="form-control" placeholder="zzzz LTDA"  name="empresa" id="empresa">
-      </div>
-      
-      <div class="col-md-4">
-        <label for="inputState" class="form-label ms-3">Cargo</label>
-        <input type="text" class="form-control" placeholder="Chefe"  name="cargo" id="cargo">
-      </div>
-
-      
-      <div class="col-12 mt-4">
-        <button id="salvarContato" type="submit" class="btn btn-outline-success ms-5">Salvar Registro</button>
-      </div>
-    </form>
-
   </div>
 
 
